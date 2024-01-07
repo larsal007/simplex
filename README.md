@@ -3,7 +3,7 @@
 ![Latest Release](https://img.shields.io/github/v/release/larsal007/simplex)
 [![Build Status](https://travis-ci.com/larsal007/simplEx.svg?branch=master)](https://travis-ci.com/larsal007/simplex)
 
-:hammer_and_wrench: Simple regex CLI for multiple local and remote sources
+:hammer_and_wrench: SimplEx, a uncomplicated regex CLI for multiple local and remote sources written in rust.
 
 ## Table of Content <!-- omit from toc -->
 
