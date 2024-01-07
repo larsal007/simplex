@@ -16,5 +16,6 @@
         "mhutchie.git-graph",
         "donjayamanne.githistory",
         "esbenp.prettier-vscode",
+        "vivaxy.vscode-conventional-commits",
     ]
 }
