@@ -1,20 +1,23 @@
-use clap::{arg, command};
+use clap::{arg, command, crate_authors, crate_version, crate_description};
 
 pub fn cli() -> clap::Command {
     command!()
-        .group(clap::ArgGroup::new("search").multiple(false))
-        .next_help_heading("Pattern")
+        .author(crate_authors!(""))
+        .version(crate_version!())
+        .about(crate_description!())
+        .help_template(r"
+{before-help}{name} (v{version})
+{author}
+{about}
+
+{usage-heading} {usage}
+
+{all-args}{after-help}
+")
         .args( [
-            arg!(-r --regex <PATTERN> "Sets the regex pattern to search for").group("search").required(true),
+            arg!(<REGEX> "Sets the regex pattern to search for (string)").group("args").required(true),
+            arg!(<SOURCE> "Sets the source to search from (string/url/file)").group("args").required(true),
             ])
-        // TODO: make call as simplex <regex> <source>  
-        .group(clap::ArgGroup::new("inputs").multiple(false))
-        .next_help_heading("Inputs")
-        .args( [
-            arg!(-f --file <FILE> "Sets the text file to search in").group("inputs"),
-            arg!(-u --url <URL> "Sets the URL to use").group("inputs"),
-            arg!(-s --urlfile <FILE> "Sets the source file of URLs to use").group("inputs"),
-        ])
 
         .group(clap::ArgGroup::new("flags").multiple(true))
         .next_help_heading("Flags")
@@ -29,7 +32,6 @@ pub fn cli() -> clap::Command {
         .group(clap::ArgGroup::new("output").multiple(true))
         .next_help_heading("Output")
         .args( [
-            // arg!(-O --output <FILE> "Sets the output file").group("output"),
             arg!(-F --format <FORMAT> "Sets the output format to use").group("output").value_name("FORMAT").value_parser(["text", "json", "xml", "yaml", "csv"]).default_value("text"),
             arg!(-D --delimiter <DELIM> "Sets the delimiter to use").group("output").default_value(","),
             arg!(-Q --quote <QUOTE> "Sets the quote character to use").group("output").default_value("\""),
