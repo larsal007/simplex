@@ -12,8 +12,6 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"Gruntfuggly.todo-tree",
-				"wayou.vscode-todo-highlight",
 				"vadimcn.vscode-lldb"
 			]
 		}
