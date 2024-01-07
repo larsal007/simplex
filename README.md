@@ -3,7 +3,7 @@
 ![Latest Release](https://img.shields.io/github/v/release/larsal007/simplex)
 [![Build Status](https://travis-ci.com/larsal007/simplex.svg?branch=master)](https://travis-ci.com/larsal007/simplex)
 
-**:rocket: Fast regex CLI for multiple local and remote sources.
+:rocket: Fast regex CLI for multiple local and remote sources
 
 ## Table of Content <!-- omit from toc -->
 
