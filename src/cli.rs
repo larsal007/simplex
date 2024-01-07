@@ -7,7 +7,7 @@ pub fn cli() -> clap::Command {
         .args( [
             arg!(-r --regex <PATTERN> "Sets the regex pattern to search for").group("search").required(true),
             ])
-        
+        // TODO: make call as simplex <regex> <source>  
         .group(clap::ArgGroup::new("inputs").multiple(false))
         .next_help_heading("Inputs")
         .args( [
