@@ -1,9 +1,9 @@
-# Simplex <!-- omit from toc -->
+# SimplEx <!-- omit from toc -->
 
 ![Latest Release](https://img.shields.io/github/v/release/larsal007/simplex)
-[![Build Status](https://travis-ci.com/larsal007/simplex.svg?branch=master)](https://travis-ci.com/larsal007/simplex)
+[![Build Status](https://travis-ci.com/larsal007/simplEx.svg?branch=master)](https://travis-ci.com/larsal007/simplex)
 
-:rocket: Fast regex CLI for multiple local and remote sources
+:hammer_and_wrench: Simple regex CLI for multiple local and remote sources
 
 ## Table of Content <!-- omit from toc -->
 
@@ -13,30 +13,30 @@
 
 ## Introduction
 
-Simplex is a fast and powerful command-line tool written in Rust that allows you to perform regular expression searches on multiple local and remote sources. It provides a convenient way to search for patterns in text files, URLs, and source files of URLs. With Simplex, you can easily count the number of matches, list the files that match the pattern, print line numbers of matches, and more.
+SimplEx is a fast and powerful command-line tool written in Rust that allows you to perform regular expression searches on multiple local and remote sources. It provides a convenient way to search for patterns in text files, URLs, and source files of URLs. With SimplEx, you can easily count the number of matches, list the files that match the pattern, print line numbers of matches, and more.
 
 ## Installation
 
-To install Simplex, follow the steps below:
+To install SimplEx, follow the steps below:
 
 1. Ensure you have Rust installed. If not, you can install it by following the instructions at [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install).
 
 2. Open a terminal or command prompt.
 
-3. Run the following command to install Simplex:
+3. Run the following command to install SimplEx:
 
    ```shell
-   cargo install simplex
+   cargo install simplEx
    ```
 
-Once the installation is complete, you can start using Simplex right away!
+Once the installation is complete, you can start using SimplEx right away!
 
 ## Usage
 
 ```shell
 Regex, a fast command line tool written in Rust
 
-Usage: simplex [OPTIONS] --regex <PATTERN>
+Usage: simplEx [OPTIONS] --regex <PATTERN>
 
 Options:
   -h, --help     Print help
